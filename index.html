@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>The Indian Farm Crisis</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Your styles should be called here -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+
+
+    <p class="date">April 19, 2019 </p>
+    <h3> Why Indian Farmers Protest </h3>
+
+    <h1> If you earned as much as them, you probably would too. </h1>
+
+
+    <figure>
+      <img src="images/lead.jpg" />
+      <figcaption> Rice Farmers in Kerala, India. Credit: Mathieu Schoutteten/Flickr</figcaption>
+    </figure>
+
+    <div class="container">
+
+      <p class="byline">By Nikitha Sattiraju </p>
+
+      <p class="intro"> Indian farmers have been protesting over the last two years against the declining viability of agriculture in the country. Costs of cultivation have shot up but net farm returns have barely increased. Farmers are stuck in an
+        endless cycle of debt to finance their farms. More than half of all farm households in India are debt-burdened, according to the country's National Sample Survey Organization (NSSO). And the inability to repay their debt has pushed many
+        Indian
+        farmers to suicide.</p>
+      <br>
+
+      <p class="intro">The present government promised to double farm incomes by 2022 and provide higher support prices to farm commodities but is yet to deliver. Their electoral promises and rising farm debt spurred the nationwide
+        farmer protests.</p>
+      <br>
+
+      <h2 class="question"> How much would you make if you were a small farmer in India?</h2>
+      <p class="caveat">*Provided a drought or floods don't kill your crops and middlemen do not eat up a sizeable chunk of your earnings.</p>
+      <form class="grow">
+        <h2 class="question">Which crop would you like to grow?</h2>
+        <input type="radio" name="crop" value="rice" data-earn="17" data-yield="1020" data-cost="12">Rice</input><br>
+        <input type="radio" name="crop" value="wheat" data-earn="18" data-yield="1286" data-cost="8">Wheat</input><br>
+        <input type="radio" name="crop" value="maize" data-earn="17" data-yield="1266" data-cost="11">Maize</input><br>
+        <input type="radio" name="crop" value="sugarcane" data-earn="2.75" data-yield="27954" data-cost="2">Sugarcane</input><br>
+        <input type="radio" name="crop" value="soybean" data-earn="34" data-yield="259" data-cost="23">Soybean</input><br>
+      </form>
+
+      <p class="text hide" id="rice">The current price for rice is <span>17</span> rupees per kg</p>
+      <p class="text hide" id="wheat">The current price for wheat is <span>18</span> rupees per kg</p>
+      <p class="text hide" id="maize">The current price for maize is <span>17</span> rupees per kg</p>
+      <p class="text hide" id="sugarcane">The current price for sugarcane is <span>2.75</span> rupees per kg</p>
+      <p class="text hide" id="soybean">The current price for soybean is <span>34</span> rupees per kg</p>
+
+      <form class="land">
+        <h2 class="question">How big would your land be?</h2>
+        <input type="radio" name="size" value="1" data-spend="6185" class="text1">1 acre</input><br>
+        <input type="radio" name="size" value="2.5" data-spend="6653" class="text1">2.5 acres</input><br>
+        <input type="radio" name="size" value="3.75" data-spend="7802" class="text1">3.75 acres</input><br>
+        <input type="radio" name="size" value="5" data-spend="7802" class="text1">5 acres</input><br>
+      </form>
+      <div class="result hide">A land of this size yields <span id="land_yield"></span> kg of <span id="crop_type"></span></div>
+
+      <button type="button" class="make">How much did I make?
+      </button>
+      <div class="returns hide">You made <span id="pre_earning"></span> rupees.</div>
+
+      <h2 class="question"> But you now have to pay the bills </h2>
+
+      <button type="button" class="cost">Farming Costs</button><br>
+
+      <div class="earning hide">You take home <span id="post_earning"></span> rupees which is <span id="percentage"></span> % less than the average Indian income.</div>
+
+      <button type="button" class="expenses">Living expenses</button>
+
+      <div class="spending hide">You finally save <span id="spend"></span> rupees.</div>
+
+    </div> <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+
+    <p class="ending"> Farming is increasingly becoming a gamble in India. There is no guarantee that you would get the same returns as in the calculator. As mentioned above, increasingly erratic climate can lead to complete crop failure.
+      Ineffective seeds can lead to a lower-than-expected yield.
+      <br>
+      <br>
+      A supply chain riddled with middlemen would, more likely than not, capture a share of your profits. And an overproduction of food can lead to crippling price crashes. Its no
+      surprise, therefore, that rural households are now less and less dependent on farming for an income.</p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+    <!-- Your javascript should be called here -->
+  </body>
+
+</html>
